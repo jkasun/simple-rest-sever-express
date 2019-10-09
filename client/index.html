@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create New Book</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <h1>Create New Book</h1>
+        <hr>
+
+        <form action="http://localhost:3000/book" method="POST">
+            <div class="form-group">
+                <label for="exampleInputPassword1">ISBN</label>
+                <input class="form-control" name="isbn">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Title</label>
+                <input class="form-control" name="title">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Author</label>
+                <input class="form-control" name="author">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Published Date</label>
+                <input type="date" class="form-control" name="publish_date">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Publisher</label>
+                <input class="form-control" name="publisher">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Number Of Pages</label>
+                <input type="number" class="form-control" name="numOfPages">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
