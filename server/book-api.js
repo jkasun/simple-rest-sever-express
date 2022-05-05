@@ -70,13 +70,7 @@ app.delete('/book/:isbn', (req, res) => {
     const isbn = req.params.isbn;
 
     // remove item from the books array
-    books = books.filter(i => {
-        if (i.isbn !== isbn) {
-            return true;
-        }
-
-        return false;
-    });
+    books = books.filter(i => i.isbn !== isbn);
 
     // sending 404 when not found something is a good practice
     res.send('Book is deleted');
